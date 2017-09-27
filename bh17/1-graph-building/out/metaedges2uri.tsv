@@ -1,0 +1,25 @@
+metaedge	abbreviation	iri
+Anatomy - downregulates - Gene	AdG	http://rdf.rd-rephetio.org/edge/AdG
+Anatomy - expresses - Gene	AeG	http://rdf.rd-rephetio.org/edge/AeG
+Anatomy - upregulates - Gene	AuG	http://rdf.rd-rephetio.org/edge/AuG
+Compound - binds - Gene	CbG	http://rdf.rd-rephetio.org/edge/CbG
+Compound - causes - Side Effect	CcSE	http://rdf.rd-rephetio.org/edge/CcSE
+Compound - downregulates - Gene	CdG	http://rdf.rd-rephetio.org/edge/CdG
+Compound - palliates - Disease	CpD	http://rdf.rd-rephetio.org/edge/CpD
+Compound - resembles - Compound	CrC	http://rdf.rd-rephetio.org/edge/CrC
+Compound - treats - Disease	CtD	http://rdf.rd-rephetio.org/edge/CtD
+Compound - upregulates - Gene	CuG	http://rdf.rd-rephetio.org/edge/CuG
+Disease - associates - Gene	DaG	http://rdf.rd-rephetio.org/edge/DaG
+Disease - downregulates - Gene	DdG	http://rdf.rd-rephetio.org/edge/DdG
+Disease - localizes - Anatomy	DlA	http://rdf.rd-rephetio.org/edge/DlA
+Disease - presents - Symptom	DpS	http://rdf.rd-rephetio.org/edge/DpS
+Disease - resembles - Disease	DrD	http://rdf.rd-rephetio.org/edge/DrD
+Disease - upregulates - Gene	DuG	http://rdf.rd-rephetio.org/edge/DuG
+Gene - covaries - Gene	GcG	http://rdf.rd-rephetio.org/edge/GcG
+Gene - interacts - Gene	GiG	http://rdf.rd-rephetio.org/edge/GiG
+Gene - participates - Biological Process	GpBP	http://rdf.rd-rephetio.org/edge/GpBP
+Gene - participates - Cellular Component	GpCC	http://rdf.rd-rephetio.org/edge/GpCC
+Gene - participates - Molecular Function	GpMF	http://rdf.rd-rephetio.org/edge/GpMF
+Gene - participates - Pathway	GpPW	http://rdf.rd-rephetio.org/edge/GpPW
+Gene > regulates > Gene	Gr>G	http://rdf.rd-rephetio.org/edge/Gr>G
+Pharmacologic Class - includes - Compound	PCiC	http://rdf.rd-rephetio.org/edge/PciC

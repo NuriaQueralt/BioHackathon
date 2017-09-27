@@ -1,0 +1,13 @@
+type	namespace_id	namespace
+Anatomy	uberon	http://rdf.rd-rephetio.org/node/
+Compound	drugbank	http://identifiers.org/drugbank/
+Disease	do	http://rdf.rd-rephetio.org/node/
+Gene	entrez	http://www.ncbi.nlm.nih.gov/gene/
+Pathway	pc	http://rdf.rd-rephetio.org/node/
+Pathway	wp	http://www.wikipathways.org/instance/
+Pharmacologic Class	ndfrt	http://purl.bioontology.org/ontology/NDFRT/
+Side Effect	umls	http://identifiers.org/sider.effect/
+Symptom	mesh	http://identifiers.org/mesh/
+Biological Process	go	http://rdf.rd-rephetio.org/node/
+Cellular Component	go	http://rdf.rd-rephetio.org/node/
+Molecular Function	go	http://rdf.rd-rephetio.org/node/

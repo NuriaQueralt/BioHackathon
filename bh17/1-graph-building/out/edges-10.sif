@@ -1,0 +1,241 @@
+source	metaedge	target
+Compound::DB00881	CtD	Disease::DOID:10763
+Compound::DB08865	CtD	Disease::DOID:1324
+Compound::DB00434	CtD	Disease::DOID:4481
+Compound::DB01214	CtD	Disease::DOID:1686
+Compound::DB01077	CtD	Disease::DOID:11476
+Compound::DB00563	CtD	Disease::DOID:4045
+Compound::DB01590	CtD	Disease::DOID:263
+Compound::DB00480	CtD	Disease::DOID:2531
+Compound::DB00959	CtD	Disease::DOID:2377
+Compound::DB01170	CtD	Disease::DOID:10763
+Compound::DB01234	CpD	Disease::DOID:10283
+Compound::DB00443	CpD	Disease::DOID:1612
+Compound::DB00328	CpD	Disease::DOID:8398
+Compound::DB00458	CpD	Disease::DOID:1094
+Compound::DB00477	CpD	Disease::DOID:12995
+Compound::DB00797	CpD	Disease::DOID:418
+Compound::DB00935	CpD	Disease::DOID:4481
+Compound::DB00230	CpD	Disease::DOID:0050425
+Compound::DB01012	CpD	Disease::DOID:784
+Compound::DB00104	CpD	Disease::DOID:4989
+Compound::DB09000	CbG	Gene::3356
+Compound::DB01580	CbG	Gene::153
+Compound::DB00381	CbG	Gene::1576
+Compound::DB00724	CbG	Gene::1544
+Compound::DB00288	CbG	Gene::2908
+Compound::DB00238	CbG	Gene::1565
+Compound::DB08864	CbG	Gene::8856
+Compound::DB00765	CbG	Gene::7054
+Compound::DB01100	CbG	Gene::1576
+Compound::DB01268	CbG	Gene::3717
+Compound::DB00441	CuG	Gene::1831
+Compound::DB01074	CuG	Gene::694
+Compound::DB01254	CuG	Gene::25875
+Compound::DB00997	CuG	Gene::5654
+Compound::DB00679	CuG	Gene::10318
+Compound::DB08912	CuG	Gene::1066
+Compound::DB02546	CuG	Gene::55740
+Compound::DB01273	CuG	Gene::6874
+Compound::DB08860	CuG	Gene::55957
+Compound::DB00857	CuG	Gene::3383
+Compound::DB00315	CdG	Gene::51385
+Compound::DB04844	CdG	Gene::4998
+Compound::DB00170	CdG	Gene::259266
+Compound::DB00390	CdG	Gene::6821
+Compound::DB01074	CdG	Gene::6192
+Compound::DB08912	CdG	Gene::8324
+Compound::DB00091	CdG	Gene::9493
+Compound::DB08901	CdG	Gene::5223
+Compound::DB01254	CdG	Gene::10523
+Compound::DB00960	CdG	Gene::81539
+Compound::DB00135	CrC	Compound::DB01235
+Compound::DB08967	CrC	Compound::DB00433
+Compound::DB06781	CrC	Compound::DB01384
+Compound::DB00367	CrC	Compound::DB00984
+Compound::DB00741	CrC	Compound::DB00769
+Compound::DB00871	CrC	Compound::DB01408
+Compound::DB08835	CrC	Compound::DB06775
+Compound::DB00858	CrC	Compound::DB00624
+Compound::DB00131	CrC	Compound::DB00300
+Compound::DB01620	CrC	Compound::DB08801
+Compound::DB00641	CcSE	Side Effect::C0021368
+Compound::DB01166	CcSE	Side Effect::C0027796
+Compound::DB01112	CcSE	Side Effect::C0151632
+Compound::DB00745	CcSE	Side Effect::C0231530
+Compound::DB05294	CcSE	Side Effect::C0020540
+Compound::DB00214	CcSE	Side Effect::C0011175
+Compound::DB01111	CcSE	Side Effect::C0015967
+Compound::DB00244	CcSE	Side Effect::C0438717
+Compound::DB04835	CcSE	Side Effect::C0010200
+Compound::DB00705	CcSE	Side Effect::C0085593
+Pharmacologic Class::N0000191269	PCiC	Compound::DB01072
+Pharmacologic Class::N0000009947	PCiC	Compound::DB00709
+Pharmacologic Class::N0000175073	PCiC	Compound::DB00958
+Pharmacologic Class::N0000008486	PCiC	Compound::DB06218
+Pharmacologic Class::N0000011310	PCiC	Compound::DB00421
+Pharmacologic Class::N0000009909	PCiC	Compound::DB01240
+Pharmacologic Class::N0000006290	PCiC	Compound::DB01022
+Pharmacologic Class::N0000011301	PCiC	Compound::DB00823
+Pharmacologic Class::N0000175728	PCiC	Compound::DB00962
+Pharmacologic Class::N0000020074	PCiC	Compound::DB00658
+Anatomy::UBERON:0001004	AeG	Gene::8519
+Anatomy::UBERON:0001003	AeG	Gene::3852
+Anatomy::UBERON:0000029	AeG	Gene::64760
+Anatomy::UBERON:0001235	AeG	Gene::51014
+Anatomy::UBERON:0002384	AeG	Gene::9144
+Anatomy::UBERON:0000178	AeG	Gene::7052
+Anatomy::UBERON:0000473	AeG	Gene::440026
+Anatomy::UBERON:0000966	AeG	Gene::1836
+Anatomy::UBERON:0000992	AeG	Gene::9710
+Anatomy::UBERON:0000033	AeG	Gene::5533
+Anatomy::UBERON:0000057	AuG	Gene::55707
+Anatomy::UBERON:0002369	AuG	Gene::55661
+Anatomy::UBERON:0002046	AuG	Gene::11231
+Anatomy::UBERON:0002369	AuG	Gene::4916
+Anatomy::UBERON:0001295	AuG	Gene::84268
+Anatomy::UBERON:0002369	AuG	Gene::84449
+Anatomy::UBERON:0002037	AuG	Gene::55835
+Anatomy::UBERON:0000997	AuG	Gene::8310
+Anatomy::UBERON:0002037	AuG	Gene::23390
+Anatomy::UBERON:0000992	AuG	Gene::54482
+Anatomy::UBERON:0000992	AdG	Gene::8503
+Anatomy::UBERON:0002240	AdG	Gene::25903
+Anatomy::UBERON:0002081	AdG	Gene::143686
+Anatomy::UBERON:0001891	AdG	Gene::2040
+Anatomy::UBERON:0002081	AdG	Gene::9416
+Anatomy::UBERON:0001013	AdG	Gene::8887
+Anatomy::UBERON:0001893	AdG	Gene::2013
+Anatomy::UBERON:0001896	AdG	Gene::245711
+Anatomy::UBERON:0002185	AdG	Gene::94097
+Anatomy::UBERON:0002107	AdG	Gene::58516
+Gene::6499	GiG	Gene::51547
+Gene::1107	GiG	Gene::7518
+Gene::6122	GiG	Gene::6138
+Gene::1789	GiG	Gene::6996
+Gene::9861	GiG	Gene::10213
+Gene::6155	GiG	Gene::50649
+Gene::3233	GiG	Gene::65982
+Gene::4215	GiG	Gene::6767
+Gene::292	GiG	Gene::23560
+Gene::5045	GiG	Gene::11061
+Gene::4363	GcG	Gene::144699
+Gene::115703	GcG	Gene::145581
+Gene::7545	GcG	Gene::149371
+Gene::22882	GcG	Gene::64856
+Gene::203523	GcG	Gene::23096
+Gene::6203	GcG	Gene::93436
+Gene::10251	GcG	Gene::246329
+Gene::26245	GcG	Gene::4534
+Gene::283160	GcG	Gene::150465
+Gene::2189	GcG	Gene::7066
+Gene::3221	Gr>G	Gene::54708
+Gene::4925	Gr>G	Gene::6251
+Gene::6857	Gr>G	Gene::6382
+Gene::1314	Gr>G	Gene::7936
+Gene::2263	Gr>G	Gene::5955
+Gene::673	Gr>G	Gene::3122
+Gene::4087	Gr>G	Gene::23326
+Gene::5914	Gr>G	Gene::6839
+Gene::3880	Gr>G	Gene::5822
+Gene::55008	Gr>G	Gene::9518
+Gene::10692	GpPW	Pathway::PC7_2620
+Gene::83729	GpPW	Pathway::PC7_6394
+Gene::8338	GpPW	Pathway::PC7_2953
+Gene::5709	GpPW	Pathway::PC7_1671
+Gene::5295	GpPW	Pathway::WP3303_r83781
+Gene::23291	GpPW	Pathway::PC7_1537
+Gene::207	GpPW	Pathway::PC7_4053
+Gene::1234	GpPW	Pathway::PC7_4043
+Gene::4618	GpPW	Pathway::PC7_3084
+Gene::2248	GpPW	Pathway::PC7_7478
+Gene::2778	GpBP	Biological Process::GO:0031281
+Gene::10418	GpBP	Biological Process::GO:0006493
+Gene::57103	GpBP	Biological Process::GO:0002066
+Gene::23236	GpBP	Biological Process::GO:0060322
+Gene::6382	GpBP	Biological Process::GO:0007548
+Gene::92552	GpBP	Biological Process::GO:0035601
+Gene::125	GpBP	Biological Process::GO:0006805
+Gene::79837	GpBP	Biological Process::GO:0032107
+Gene::10165	GpBP	Biological Process::GO:0006820
+Gene::25897	GpBP	Biological Process::GO:0043632
+Gene::51364	GpCC	Cellular Component::GO:0034451
+Gene::162	GpCC	Cellular Component::GO:0045334
+Gene::5255	GpCC	Cellular Component::GO:0005964
+Gene::84844	GpCC	Cellular Component::GO:0005681
+Gene::27345	GpCC	Cellular Component::GO:0098796
+Gene::3306	GpCC	Cellular Component::GO:0072562
+Gene::84722	GpCC	Cellular Component::GO:0000922
+Gene::23245	GpCC	Cellular Component::GO:0005768
+Gene::10499	GpCC	Cellular Component::GO:0043025
+Gene::3118	GpCC	Cellular Component::GO:0012506
+Gene::22853	GpMF	Molecular Function::GO:0008092
+Gene::8673	GpMF	Molecular Function::GO:0016248
+Gene::363	GpMF	Molecular Function::GO:1901618
+Gene::5644	GpMF	Molecular Function::GO:0017171
+Gene::56848	GpMF	Molecular Function::GO:0031267
+Gene::128817	GpMF	Molecular Function::GO:0004869
+Gene::8529	GpMF	Molecular Function::GO:0052871
+Gene::6392	GpMF	Molecular Function::GO:0048037
+Gene::4926	GpMF	Molecular Function::GO:0005198
+Gene::84662	GpMF	Molecular Function::GO:0001077
+Disease::DOID:1319	DrD	Disease::DOID:3565
+Disease::DOID:1319	DrD	Disease::DOID:2174
+Disease::DOID:3571	DrD	Disease::DOID:10534
+Disease::DOID:119	DrD	Disease::DOID:1245
+Disease::DOID:2994	DrD	Disease::DOID:3565
+Disease::DOID:1094	DrD	Disease::DOID:1595
+Disease::DOID:11615	DrD	Disease::DOID:2998
+Disease::DOID:4362	DrD	Disease::DOID:1245
+Disease::DOID:13241	DrD	Disease::DOID:9008
+Disease::DOID:10283	DrD	Disease::DOID:11819
+Disease::DOID:784	DaG	Gene::7124
+Disease::DOID:9970	DaG	Gene::8195
+Disease::DOID:13241	DaG	Gene::51752
+Disease::DOID:14330	DaG	Gene::11315
+Disease::DOID:2377	DaG	Gene::4609
+Disease::DOID:1826	DaG	Gene::3014
+Disease::DOID:7148	DaG	Gene::5743
+Disease::DOID:3393	DaG	Gene::9021
+Disease::DOID:1826	DaG	Gene::7416
+Disease::DOID:2174	DaG	Gene::3005
+Disease::DOID:12365	DuG	Gene::90952
+Disease::DOID:332	DuG	Gene::29970
+Disease::DOID:7148	DuG	Gene::240
+Disease::DOID:0050156	DuG	Gene::1294
+Disease::DOID:2531	DuG	Gene::54583
+Disease::DOID:7693	DuG	Gene::441670
+Disease::DOID:0050742	DuG	Gene::4246
+Disease::DOID:1686	DuG	Gene::4485
+Disease::DOID:7693	DuG	Gene::94241
+Disease::DOID:0050741	DuG	Gene::482
+Disease::DOID:332	DdG	Gene::113828
+Disease::DOID:1612	DdG	Gene::10752
+Disease::DOID:11612	DdG	Gene::10667
+Disease::DOID:14227	DdG	Gene::10963
+Disease::DOID:8577	DdG	Gene::64081
+Disease::DOID:2986	DdG	Gene::5155
+Disease::DOID:1909	DdG	Gene::1540
+Disease::DOID:5419	DdG	Gene::84106
+Disease::DOID:1612	DdG	Gene::5166
+Disease::DOID:7147	DdG	Gene::4665
+Disease::DOID:11934	DlA	Anatomy::UBERON:0003126
+Disease::DOID:12185	DlA	Anatomy::UBERON:0001691
+Disease::DOID:1192	DlA	Anatomy::UBERON:0003129
+Disease::DOID:363	DlA	Anatomy::UBERON:0001237
+Disease::DOID:1192	DlA	Anatomy::UBERON:0001645
+Disease::DOID:2841	DlA	Anatomy::UBERON:0002365
+Disease::DOID:7148	DlA	Anatomy::UBERON:0001007
+Disease::DOID:3121	DlA	Anatomy::UBERON:0001193
+Disease::DOID:10763	DlA	Anatomy::UBERON:0000948
+Disease::DOID:5419	DlA	Anatomy::UBERON:0001017
+Disease::DOID:13499	DpS	Symptom::D003967
+Disease::DOID:8893	DpS	Symptom::D009325
+Disease::DOID:635	DpS	Symptom::D015746
+Disease::DOID:10652	DpS	Symptom::D007806
+Disease::DOID:1793	DpS	Symptom::D000860
+Disease::DOID:184	DpS	Symptom::D005132
+Disease::DOID:1115	DpS	Symptom::D010243
+Disease::DOID:2994	DpS	Symptom::D014103
+Disease::DOID:1094	DpS	Symptom::D012148
+Disease::DOID:784	DpS	Symptom::D015430

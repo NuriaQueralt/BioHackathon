@@ -1,0 +1,5 @@
+<http://identifiers.org/drugbank/DB00843> <http://rdf.rd-rephetio.org/edge/CtD> <http://rdf.rd-rephetio.org/node/DOID_10652> .
+<http://identifiers.org/drugbank/DB00843> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_010004> .
+<http://rdf.rd-rephetio.org/node/DOID_10652> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_010299> .
+<http://rdf.rd-rephetio.org/node/DOID_10652> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/DOID_10652> .
+<http://identifiers.org/drugbank/DB00674> <http://rdf.rd-rephetio.org/edge/CtD> <http://rdf.rd-rephetio.org/node/DOID_10652> .

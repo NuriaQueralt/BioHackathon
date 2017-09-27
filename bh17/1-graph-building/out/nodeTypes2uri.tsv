@@ -1,0 +1,12 @@
+type	class
+Anatomy	http://semanticscience.org/resource/SIO_001262
+Compound	http://semanticscience.org/resource/SIO_010004
+Disease	http://semanticscience.org/resource/SIO_010299
+Gene	http://semanticscience.org/resource/SIO_010035
+Pathway	http://semanticscience.org/resource/SIO_001107
+Pharmacologic Class	http://semanticscience.org/resource/SIO_001256
+Side Effect	http://semanticscience.org/resource/SIO_010056
+Symptom	http://semanticscience.org/resource/SIO_010056
+Biological Process	http://purl.obolibrary.org/obo/GO_0008150
+Cellular Component	http://purl.obolibrary.org/obo/GO_0005575
+Molecular Function	http://purl.obolibrary.org/obo/GO_0003674
