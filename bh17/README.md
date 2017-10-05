@@ -50,9 +50,9 @@ python 3-rdf-owl/addOnto.py
 Run all the following from the `4-learn-embeddings/` workdir:
 
 1. OWL inference and graph closure. 
-  Input: `edges.sif.n3` the RDF/OWL graph
-  Output: `outWrapper.txt` the classified RDF graph using the OWL ontologies in `../onto-dir/` directory
-  Run:
+Input: `edges.sif.n3` the RDF/OWL graph  
+Output: `outWrapper.txt` the classified RDF graph using the OWL ontologies in `../onto-dir/` directory  
+Run:
 
 ~~~~
 groovy ../../walking-rdf-and-owl/RDFWrapper.groovy -i ../3-rdf-owl/edges.sif.n3 -o outWrapper.txt -m mappingFile.txt -d ../onto-dir -c true
