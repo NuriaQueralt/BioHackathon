@@ -16,8 +16,11 @@ Run all the following from the current workdir:
 
 #### 1. Build the NGLY1 deficiency graph
 Build the graph running a modified version of the [Jupyter notebook](https://github.com/dhimmel/integrate/blob/master/integrate.ipynb) created by Daniel Himmelstein to build hetionet. 
+
 Input: files in `1-graph-building/in/` and `1-graph-building/compile/` directories. To obtain the input files in `1-graph-building/compile/`, run beforehand the Jupyter notebooks therein.
+
 Output: `edges.sif` tabulated graph 
+
 Run:
 
 ~~~~
