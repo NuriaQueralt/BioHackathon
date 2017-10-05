@@ -35,7 +35,7 @@ python 2-rdf/edges2rdf.py
 ~~~~
 
 #### 3. Graph RDFization and addition of OWL ontologies (the semantic layer)
-Input: `edges.sif` graph
+Input: `edges.sif` graph, `1-graph-building/out/nodeTypes2uri.tsv`, `1-graph-building/out/metaedges2uri.tsv`, and `1-graph-building/out/nodes2uri.tsv`
 Output: `edges.sif.n3` RDF and OWL graph
 Run:
 
@@ -89,8 +89,38 @@ groovy ../../walking-rdf-and-owl/UnMap.groovy -i embeddingsFile.txt -m mappingFi
 In this part, we explain how to use the feature embedding vectors representing the graph structure to make predictions on new drug-disease edges in the graph. We used the features to train a machine learning logistic regression model. Weka (java) or Scikit-learn (python) software can be used. We used Weka v3.9.1.
 
 #### 5. Train the model
-#### 6. Make predictions
 
+1. Create the training set, the unclassified set, and the mapping file.
+Input: `4-embeddings-learn/embeddingsFile_mapped.txt` feature vectors, `3-rdf-owl/edges.sif.n3` RDF/OWL graph, 
+Output: `trainData.csv` 1:1 true versus false instances training set, `trainExtData.csv` 1:10 true versus false instances training set, `unclassified.csv` observations set, `mappingFile.txt` indexes to drug-disease ID pairs mapping
+Run:
+
+~~~~
+python trainSet.py
+~~~~
+
+2. Train the machine learning model
+Input: `trainExtData.csv` training set
+Output: model
+
+Run: We used Weka and trained a logistic regression model using 10-fold crossvalidation. 
+
+#### 6. Make predictions
+1. Evaluate the unclassified observations using the model.
+Input: model, `unclassified.csv` observations set
+Output: `predictions.csv` classified observations
+
+Run: In Weka.
+
+2. Unmap the indexed predictions to the drug-disease hypothesis classified.
+Input: `mappingFile.txt`, `predictions.csv`
+Output: `predictions_mapped.csv` mapped predictions
+
+Run:
+
+~~~~
+python unMap.py
+~~~~
 
 ## Contributors
 Robert Hoehndorf, Goto Susumu, Pier Luigi Buttigieg, Kiyoko F. Aoki-Kinoshita, Tiffany Callahan.
@@ -98,7 +128,6 @@ Robert Hoehndorf, Goto Susumu, Pier Luigi Buttigieg, Kiyoko F. Aoki-Kinoshita, T
 ## Collaborators
 - The Scripps Research Institute
 - KAUST
-- Database Center for Life Science (DBCLS)
 
 ## License
 
