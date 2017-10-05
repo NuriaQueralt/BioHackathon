@@ -83,12 +83,16 @@ while i < len(trueDict)*10:
 print(i)
 f.close()
 
-
 f = open('unclassified.csv', 'w')
+m = open('mappingFile.txt', 'w')
+i = 1
 for obs in allCompDisDict:
     comp,dis = obs.split('::')
     compIri = compDict[comp]
     disIri = disDict[dis]
-    f.write('?\t{}\t{}\n'.format(featureDict[compIri],featureDict[disIri]))
+    f.write('{}\t{}\t?\n'.format(featureDict[compIri],featureDict[disIri]))
+    m.write('{}\t{}\n'.format(obs,i))
+    i += 1
 f.close()
+m.close()
 
