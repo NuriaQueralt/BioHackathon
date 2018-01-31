@@ -1,0 +1,17 @@
+# weka
+# fit a logistic regression model; 10fold cross-validation
+# Preprocess tab: open trainExtData.arff
+# Classify tab: classifier > functions > logistic
+# Test options: Cross-validation
+# More options: ok
+# Start
+# Right click: save model, fit_model_output.txt,
+# Test options: Supplied test set: unclassified.arff
+# More options: untick all, tick 'store predictions for visualization' and output predictions
+'csv', ok
+# Right click: 're-evaluate model on current test set'
+# Right click: save predictions_output.txt
+# exit weka
+# :1,200w predictions.csv
+# remove the last blank line in predictions.csv
+

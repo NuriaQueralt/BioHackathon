@@ -1,0 +1,17 @@
+#!/bin/bash
+
+set -e
+
+for i in 1 2 3; 
+do
+   cd $i-predictions
+   echo "entering $i-predictions/"
+   cp ../../unMap.py .
+   python3 unMap.py 
+   echo "executing unMap.py.."
+   rm -f unMap.py
+   jupyter nbconvert --execute predictions_analysis.ipynb  --inplace --ExecutePreprocessor.timeout=-1
+   cd ..
+   echo "script completed in $i-predictions/"
+   echo ""
+done

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -e 
+cp ../trainExtData.csv .
+cp ../unclassified.csv .
+./csv2arff.py trainExtData.csv unclassified.csv 
+rm -f *.csv

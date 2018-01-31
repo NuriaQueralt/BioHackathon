@@ -1,0 +1,19 @@
+#!/bin/bash
+
+set -e
+
+#for i in 1;
+for i in 2 3;
+do
+   cd $i-predictions
+   echo "entering $i-predictions/"   
+   python3 trainSet.py
+   rm -f trainData.csv
+   cp ../../replication/csv2arff.py .
+   ./csv2arff.py trainExtData.csv unclassified.csv
+   rm -f csv2arff.py 
+   cd ..
+   echo "script completed in $i-predictions/"
+   echo ""
+done
+
