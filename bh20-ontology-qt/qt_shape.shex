@@ -1,0 +1,14 @@
+prefix : <http://biohackathon.org/bh20-qt-model/data/> 
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+prefix xsd: <http://www.w3.org/2001/XMLSchema#> 
+prefix cmo: <http://purl.obolibrary.org/obo/CMO_> 
+prefix uo: <http://purl.obolibrary.org/obo/UO_> 
+prefix sio: <https://semanticscience.org/resource/> 
+prefix bao: <http://www.bioassayontology.org/bao#> 
+
+:quantitativeTraitShape {
+   rdf:type [ cmo:~ ] ; 
+   sio:SIO_000300 xsd:float ; 
+   sio:SIO_00221 [ uo:~ ] ; 
+   bao:BAO_0002854 IRI  
+}
