@@ -1,0 +1,109 @@
+$base: http://biohackathon.org/bh20-qt-schema
+$namespaces:
+  obo: http://purl.obolibrary.org/obo/
+  sio: http://semanticscience.org/resource/
+  evs: http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#
+  efo: http://www.ebi.ac.uk/efo/
+
+
+$graph:
+
+- name: hostSchema
+  type: record
+  fields:
+    ethnicity:
+        doc: Ethinicity of the host e.g. http://purl.obolibrary.org/obo/HANCESTRO_0010
+        type: string?
+        jsonldPredicate:
+          _id: http://semanticscience.org/resource/SIO_001014
+          _type: "@id"
+          noLinkCheck: true
+
+
+- name: hospitalSchema
+  type: record
+  fields:
+    admission_date:
+        doc: Date when the host was admitted to the health centre (e.g. "2020-01-01")
+        type: string
+        jsonldPredicate:
+          _id: http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25164
+
+
+- name: comorbiditiesSchema
+  type: record
+  fields:
+    chronic_cardiac_disease:
+        doc: Chronic cardiac disease comorbidity existing pre-admission as one of the three possible values: [yes, no, unknown], eg "yes".
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/DOID_114
+          _type: "@id"
+          noLinkCheck: true
+
+
+- name: concomitant_medicationSchema
+  type: record
+  fields:
+    ace_inhibitors:
+        doc: Chronic medication or taken within 14 days of admission as one of the three possible values: [yes, no, unknown], eg "yes". 
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CHEBI_35457
+          _type: "@id"
+          noLinkCheck: true
+
+
+- name: MedicationSchema
+  type: record
+  fields:
+    antiviral:
+        doc: Current medication as one of the three possible values: [yes, no, unknown], eg "yes".
+        type: string 
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CHEBI_36044
+          _type: "@id"
+          noLinkCheck: true
+    ribavirin:
+        doc: Current medication as one of the three possible values: [yes, no, unknown], eg "yes".
+        type: string ?
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CHEBI_63580
+          _type: "@id"
+          noLinkCheck: true
+
+
+- name: quantitativeTraitSchema
+  type: record
+  fields:
+    temperature:
+        doc: Body temperature of the patient as number (e.g. 37.5)
+        type: float
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CMO_0000015
+    temperature_unit:
+        doc: Unit of temperature e.g. http://purl.obolibrary.org/obo/UO_0000027
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+          _type: "@id"
+          noLinkCheck: true
+
+
+- name: MainSchema
+  type: record
+  documentRoot: true
+  fields:
+    host: hostSchema
+    hospital: hospitalSchema
+    comorbidities: comorbiditiesSchema
+    concomitant_medication: concomitant_medicationSchema
+    Medication: MedicationSchema
+    quantitativeTrait: quantitativeTraitSchema
+    id:
+      doc: The subject (eg the fasta/fastq file) that the metadata describes
+      type: string
+      jsonldPredicate:
+        _id: "@id"
+        _type: "@id"
+        noLinkCheck: true
