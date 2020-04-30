@@ -1,0 +1,36 @@
+prefix  obo: <http://purl.obolibrary.org/obo/>
+prefix  xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix  sio: <http://semanticscience.org/resource/> 
+prefix  evs: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#>
+prefix  efo: <http://www.ebi.ac.uk/efo/>
+
+:hostShape {
+    sio:SIO_001014 [ obo:HANCESTRO_~ ] ? ; #ethnicity
+}
+
+
+:hospitalShape {
+    evs:C25164 xsd:string ? ; #admission_date
+}
+
+
+:comorbiditiesShape {
+    obo:DOID_114 xsd:string ; #chronic_cardiac_disease
+}
+
+
+:concomitant_medicationShape {
+    obo:CHEBI_35457 xsd:string ; #ace_inhibitors
+}
+
+
+:MedicationShape {
+    obo:CHEBI_36044 xsd:string ; #antiviral
+    obo:CHEBI_63580 xsd:string ? ; #ribavirin
+}
+
+
+:quantitativeTraitShape {
+    obo:CMO_0000015 xsd:float ; #temperature
+    obo:IAO_0000003 [ obo:UO_~ ] ; #temperature_unit
+}
