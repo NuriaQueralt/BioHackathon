@@ -19,6 +19,50 @@ $graph:
           _id: http://purl.obolibrary.org/obo/IAO_0000003
           _type: "@id"
           noLinkCheck: true
+    heart_rate:
+        doc: Heart rate of the patient as number (e.g. 60)
+        type: int
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CMO_0000002
+    heart_rate_unit:
+        doc: Unit of heart rate e.g. beats/min
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+    respiratory_rate:
+        doc: Respiratory rate of the patient as number (e.g. 80)
+        type: int
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CMO_0000289
+    respiratory_rate_unit:
+        doc: Unit of respiratory rate e.g. breaths/min
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+    bp_systolic:
+        doc: Systolic blood pressure of the patient as number (e.g. 130)
+        type: int
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CMO_0000004
+    bp_systolic_unit:
+        doc: Unit of systolic blood pressure e.g. http://purl.obolibrary.org/obo/UO_0000272
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+          _type: "@id"
+          noLinkCheck: true
+    bp_diastolic:
+        doc: Diastolic blood pressure of the patient as number (e.g. 100)
+        type: int
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CMO_0000005
+    bp_diastolic_unit:
+        doc: Unit of diastolic blood pressure e.g. http://purl.obolibrary.org/obo/UO_0000272
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+          _type: "@id"
+          noLinkCheck: true
 
 - name: MainSchema
   type: record
