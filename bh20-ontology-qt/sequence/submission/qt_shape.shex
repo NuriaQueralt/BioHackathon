@@ -5,4 +5,12 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 :quantitativeTraitShape {
     obo:CMO_0000015 xsd:float ; #temperature
     obo:IAO_0000003 [ obo:UO_~ ] ; #temperature_unit
+    obo:CMO_0000002 xsd:integer ; #heart_rate
+    obo:IAO_0000003 xsd:string ; #heart_rate_unit
+    obo:CMO_0000289 xsd:integer ; #respiratory_rate
+    obo:IAO_0000003 xsd:string ; #respiratory_rate_unit
+    obo:CMO_0000004 xsd:integer ; #bp_systolic
+    obo:IAO_0000003 [ obo:UO_~ ] ; #bp_systolic_unit
+    obo:CMO_0000005 xsd:integer ; #bp_diastolic
+    obo:IAO_0000003 [ obo:UO_~ ] ; #bp_diastolic_unit    
 }
