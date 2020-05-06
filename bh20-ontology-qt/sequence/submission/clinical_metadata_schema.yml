@@ -213,7 +213,7 @@ $graph:
         doc: Current medication as one of the three possible values: [yes, no, unknown], eg "yes".
         type: string 
         jsonldPredicate:
-          _id: http://www.ebi.ac.uk/efo/EFO_0000727
+          _id: http://purl.obolibrary.org/obo/NCIT_C28041
  
     ace_inhibitors:
         doc: Chronic medication or taken within 14 days of admission as one of the three possible values: [yes, no, unknown], eg "yes". 
