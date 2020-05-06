@@ -16,17 +16,41 @@ prefix  efo: <http://www.ebi.ac.uk/efo/>
 
 :comorbiditiesShape {
     obo:DOID_114 xsd:string ; #chronic_cardiac_disease
+    obo:DOID_10763 xsd:string ; #hypertension
+    obo:DOID_850 xsd:string ; #chronic_pulmonary_disease
+    obo:DOID_2841 xsd:string ; #asthma
+    obo:DOID_784 xsd:string ; #chronic_kidney_disease
+    obo:DOID_409 xsd:string ; #chronic_liver_disease
+    obo:DOID_863 xsd:string ; #chronic_neurological_disorder
+    obo:DOID_526 xsd:string ; #hiv
+    obo:DOID_9351 xsd:string ; #diabetes
+    efo:EFO_0003768 xsd:string ; #current_smoking
+    obo:DOID_399 xsd:string ; #tuberculosis
+    obo:HP_0001746 xsd:string ; #asplenia
+    obo:DOID_162 xsd:string ; #malignant_neoplasm
+    obo:HP_0002721 xsd:string ; #immunodeficiency
 }
 
 
 :concomitant_medicationShape {
     obo:CHEBI_35457 xsd:string ; #ace_inhibitors
+    obo:CHEBI_61016 xsd:string ; #arbs
+    obo:CHEBI_35475 xsd:string ; #nsaid
+    obo:CHEBI_87631 xsd:string ; #statin_class
 }
 
 
 :MedicationShape {
     obo:CHEBI_36044 xsd:string ; #antiviral
-    obo:CHEBI_63580 xsd:string ? ; #ribavirin
+    obo:CHEBI_36044 [ obo:CHEBI_63580 obo:CHEBI_31781 obo:CHEBI_45409 obo:CHEBI_52425 obo:NCIT_C20494 obo:NCIT_C20495 ] ? ; #antiviral_list
+    obo:CHEBI_50858 xsd:string ; #corticosteroid
+    obo:CHEBI_22582 xsd:string ; #antibiotic
+    obo:CHEBI_35718 xsd:string ; #antifungal_agent
+    obo:CHEBI_38068 xsd:string ; #antimalarial_agent
+    obo:NCIT_C28041 xsd:string ; #experimental_agent
+    obo:CHEBI_35457 xsd:string ; #ace_inhibitors
+    obo:CHEBI_61016 xsd:string ; #arbs
+    obo:CHEBI_35475 xsd:string ; #nsaid
 }
 
 
