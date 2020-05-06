@@ -40,6 +40,97 @@ $graph:
           _id: http://purl.obolibrary.org/obo/DOID_114
           _type: "@id"
           noLinkCheck: true
+    hypertension:
+        doc: Hypertension comorbidity existing pre-admission as one of the three possible values: [yes, no, unknown], eg "yes".
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/DOID_10763
+          _type: "@id"
+          noLinkCheck: true
+    chronic_pulmonary_disease:
+        doc: Chronic pulmonary disease comorbidity existing pre-admission as one of the three possible values: [yes, no, unknown], eg "yes".
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/DOID_850
+          _type: "@id"
+          noLinkCheck: true
+    asthma:
+        doc: Asthma comorbidity existing pre-admission as one of the three possible values: [yes, no, unknown], eg "yes".
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/DOID_2841
+          _type: "@id"
+          noLinkCheck: true
+    chronic_kidney_disease:
+        doc: Chronic kidney disease comorbidity existing pre-admission as one of the three possible values: [yes, no, unknown], eg "yes".
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/DOID_784
+          _type: "@id"
+          noLinkCheck: true
+    chronic_liver_disease:
+        doc: Chronic liver disease comorbidity existing pre-admission as one of the three possible values: [yes, no, unknown], eg "yes".
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/DOID_409
+          _type: "@id"
+          noLinkCheck: true
+    chronic_neurological_disorder:
+        doc: Chronic neurological disorder comorbidity existing pre-admission as one of the three possible values: [yes, no, unknown], eg "yes".
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/DOID_863
+          _type: "@id"
+          noLinkCheck: true
+    hiv:
+        doc: HIV comorbidity existing pre-admission as one of the three possible values: [yes-on ART, yes-not on ART, no, unknown], eg "yes".
+        type: string
+        jsonldPredicate:
+          _id: hhttp://purl.obolibrary.org/obo/DOID_526
+          _type: "@id"
+          noLinkCheck: true
+    diabetes:
+        doc: Diabetes comorbidity existing pre-admission as one of the three possible values: [yes, no, unknown], eg "yes".
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/DOID_9351
+          _type: "@id"
+          noLinkCheck: true
+    current_smoking:
+        doc: Current smoking comorbidity existing pre-admission as one of the three possible values: [yes, no, unknown], eg "yes".
+        type: string
+        jsonldPredicate:
+          _id: http://www.ebi.ac.uk/efo/EFO_0003768
+          _type: "@id"
+          noLinkCheck: true
+    tuberculosis:
+        doc: Tuberculosis comorbidity existing pre-admission as one of the three possible values: [yes, no, unknown], eg "yes".
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/DOID_399
+          _type: "@id"
+          noLinkCheck: true
+    asplenia:
+        doc: Asplenia comorbidity existing pre-admission as one of the three possible values: [yes, no, unknown], eg "yes".
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/HP_0001746
+          _type: "@id"
+          noLinkCheck: true
+    malignant_neoplasm:
+        doc: Malignant neoplasm comorbidity existing pre-admission as one of the three possible values: [yes, no, unknown], eg "yes".
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/DOID_162
+          _type: "@id"
+          noLinkCheck: true
+    immunodeficiency:
+        doc: Immunodeficiency comorbidity existing pre-admission as one of the three possible values: [yes, no, unknown], eg "yes".
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/HP_0002721
+          _type: "@id"
+          noLinkCheck: true                                                                                                              
 
 
 - name: concomitant_medicationSchema
@@ -52,6 +143,27 @@ $graph:
           _id: http://purl.obolibrary.org/obo/CHEBI_35457
           _type: "@id"
           noLinkCheck: true
+    arbs:
+        doc: Chronic medication or taken within 14 days of admission as one of the three possible values: [yes, no, unknown], eg "yes". 
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CHEBI_61016
+          _type: "@id"
+          noLinkCheck: true
+    nsaid:
+        doc: Chronic medication or taken within 14 days of admission as one of the three possible values: [yes, no, unknown], eg "yes". 
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CHEBI_35475
+          _type: "@id"
+          noLinkCheck: true
+    statin_class:
+        doc: Chronic medication or taken within 14 days of admission as one of the three possible values: [yes, no, unknown], eg "yes". 
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CHEBI_87631
+          _type: "@id"
+          noLinkCheck: true                              
 
 
 - name: MedicationSchema
@@ -64,13 +176,66 @@ $graph:
           _id: http://purl.obolibrary.org/obo/CHEBI_36044
           _type: "@id"
           noLinkCheck: true
-    ribavirin:
-        doc: Current medication as one of the three possible values: [yes, no, unknown], eg "yes".
-        type: string ?
+    antiviral_list:
+        doc: Current medication as a list, eg http://purl.obolibrary.org/obo/CHEBI_63580, http://purl.obolibrary.org/obo/CHEBI_35660.
+        type: string[]?
         jsonldPredicate:
-          _id: http://purl.obolibrary.org/obo/CHEBI_63580
+          _id: http://purl.obolibrary.org/obo/CHEBI_36044
+    corticosteroid:
+        doc: Current medication as one of the three possible values: [yes, no, unknown], eg "yes".
+        type: string 
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CHEBI_50858
           _type: "@id"
           noLinkCheck: true
+    antibiotic:
+        doc: Current medication as one of the three possible values: [yes, no, unknown], eg "yes".
+        type: string 
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CHEBI_22582
+          _type: "@id"
+          noLinkCheck: true
+    antifungal_agent:
+        doc: Current medication as one of the three possible values: [yes, no, unknown], eg "yes".
+        type: string 
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CHEBI_35718
+          _type: "@id"
+          noLinkCheck: true
+    antimalarial_agent:
+        doc: Current medication as one of the three possible values: [yes, no, unknown], eg "yes".
+        type: string 
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CHEBI_38068
+          _type: "@id"
+          noLinkCheck: true
+    experimental_agent:
+        doc: Current medication as one of the three possible values: [yes, no, unknown], eg "yes".
+        type: string 
+        jsonldPredicate:
+          _id: http://www.ebi.ac.uk/efo/EFO_0000727
+ 
+    ace_inhibitors:
+        doc: Chronic medication or taken within 14 days of admission as one of the three possible values: [yes, no, unknown], eg "yes". 
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CHEBI_35457
+          _type: "@id"
+          noLinkCheck: true
+    arbs:
+        doc: Chronic medication or taken within 14 days of admission as one of the three possible values: [yes, no, unknown], eg "yes". 
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CHEBI_61016
+          _type: "@id"
+          noLinkCheck: true
+    nsaid:
+        doc: Chronic medication or taken within 14 days of admission as one of the three possible values: [yes, no, unknown], eg "yes". 
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CHEBI_35475
+          _type: "@id"
+          noLinkCheck: true                                                        
 
 
 - name: quantitativeTraitSchema
