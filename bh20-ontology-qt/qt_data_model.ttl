@@ -9,5 +9,5 @@
 :instanceModel
    rdf:type iao:0000109 ; #iao:measurement-datum
    sio:SIO_000300 owl:DatatypeProperty ; #sio:has-value
-   sio:SIO_00221 iao:0000003 ; #sio:has-unit iao:measurement-unit-label
+   sio:SIO_000221 iao:0000003 ; #sio:has-unit iao:measurement-unit-label
    bao:BAO_0002854 obi:0000070 . #bao:has-bioassay-type obi:assay
