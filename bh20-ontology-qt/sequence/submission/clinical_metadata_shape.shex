@@ -57,4 +57,113 @@ prefix  efo: <http://www.ebi.ac.uk/efo/>
 :quantitativeTraitShape {
     obo:CMO_0000015 xsd:float ; #temperature
     obo:IAO_0000003 [ obo:UO_~ ] ; #temperature_unit
+    obo:CMO_0000002 xsd:integer ; #heart_rate
+    obo:IAO_0000003 xsd:string ; #heart_rate_unit
+    obo:CMO_0000289 xsd:integer ; #respiratory_rate
+    obo:IAO_0000003 xsd:string ; #respiratory_rate_unit
+    obo:CMO_0000004 xsd:integer ; #bp_systolic
+    obo:IAO_0000003 [ obo:UO_~ ] ; #bp_systolic_unit
+    obo:CMO_0000005 xsd:integer ; #bp_diastolic
+    obo:IAO_0000003 [ obo:UO_~ ] ; #bp_diastolic_unit    
+    obo:CMO_0001324 xsd:float ; #oxygen_saturation
+    obo:IAO_0000003 [ obo:UO_~ ] ; #oxygen_saturation_unit
+    obo:NCIT_C121109 xsd:float ; #glasgow_coma_score
+    obo:CMO_0000317 xsd:float ; #mid_upper_arm_cirumference
+    obo:IAO_0000003 [ obo:UO_~ ] ; #mid_upper_arm_cirumference_unit
+    obo:CMO_0000106 xsd:float ; #height
+    obo:IAO_0000003 [ obo:UO_~ ] ; #height_unit
+    obo:CMO_0000012 xsd:float ; #weight
+    obo:IAO_0000003 [ obo:UO_~ ] ; #weight_unit
+    obo:CMO_0000506 xsd:float ; #haemoglobin
+    obo:IAO_0000003 [ obo:UO_~ ] ; #haemoglobin_unit
+    obo:CMO_0000027 xsd:float ; #wbc_count
+    obo:IAO_0000003 xsd:string ; #wbc_count_unit
+    obo:CMO_0000037 xsd:float ; #haematocrit
+    obo:IAO_0000003 [ obo:UO_~ ] ; #haematocrit_unit
+    obo:CMO_0000921 xsd:float ; #platelets
+    obo:IAO_0000003 xsd:string ; #platelets_unit
+    obo:CMO_0000210 xsd:float ; #aptt_aptr
+    obo:CMO_0000211 xsd:integer ; #prothrombin_time 
+    obo:IAO_0000003 [ obo:UO_~ ] ; #prothrombin_time_unit 
+    efo:EFO_0008390 xsd:float ; #inr
+    obo:CMO_0000574 xsd:float ; #alt_sgpt
+    obo:IAO_0000003 [ obo:UO_~ ] ; #alt_sgpt_unit
+    obo:CMO_0000123 xsd:float ; #total_bilirubin
+    obo:IAO_0000003 [ obo:UO_~ ] ; #total_bilirubin_unit
+    obo:CMO_0000580 xsd:float ; #ast_sgot
+    obo:IAO_0000003 [ obo:UO_~ ] ; #ast_sgot_unit
+    obo:CMO_0000049 xsd:float ; #urea_bun
+    obo:IAO_0000003 xsd:string ; #urea_bun_unit
+    obo:CMO_0001303 xsd:float ; #lactate
+    obo:IAO_0000003 xsd:string ; #lactate_unit
+    obo:CMO_0000767 xsd:float ; #creatinine
+    obo:IAO_0000003 [ obo:UO_~ ] ; #creatinine_unit
+    obo:CMO_0000499 xsd:float ; #sodium
+    obo:IAO_0000003 xsd:string ; #sodium_unit
+    obo:CMO_0000496 xsd:float ; #potassium
+    obo:IAO_0000003 xsd:string ; #potassium_unit
+    obo:NCIT_C103430 xsd:float ; #procalcitonin
+    obo:IAO_0000003 [ obo:UO_~ ] ; #procalcitonin_unit
+    efo:EFO_0004458 xsd:float ; #crp
+    obo:IAO_0000003 [ obo:UO_~ ] ; #crp_unit
+    obo:CMO_0000666 xsd:float ; #ldh
+    obo:IAO_0000003 [ obo:UO_~ ] ; #ldh_unit
+    obo:CMO_0002242 xsd:float ; #creatine_kinase
+    obo:IAO_0000003 [ obo:UO_~ ] ; #creatine_kinase_unit
+    obo:CMO_0001283 xsd:float ; #troponin
+    obo:IAO_0000003 [ obo:UO_~ ] ; #troponin_unit
+    obo:NCIT_C74611 xsd:float ; #esr
+    obo:IAO_0000003 xsd:string ; #esr_unit
+    efo:EFO_0004507 xsd:float ; #d_dimer
+    obo:IAO_0000003 [ obo:UO_~ ] ; #d_dimer_unit
+    efo:EFO_0004459 xsd:float ; #ferritin
+    obo:IAO_0000003 [ obo:UO_~ ] ; #ferritin_unit
+    obo:CMO_0001926 xsd:float ; #il6
+    obo:IAO_0000003 [ obo:UO_~ efo:EFO_0004385 ] ; #il6_unit
+    obo:CMO_0000110 xsd:float ; #cd3_t_cells
+    obo:IAO_0000003 xsd:string ; #cd3_t_cells_unit
+    obo:CMO_0000596 xsd:float ? ; #cd_4_t_cells
+    obo:IAO_0000003 xsd:string ? ; #cd_4_t_cells_unit
+    obo:CMO_0000597 xsd:float ? ; #cd_8_t_cells
+    obo:IAO_0000003 xsd:string ? ; #cd_8_t_cells_unit
+    obo:CMO_0001085 xsd:float ? ; #natural_killer_cells
+    obo:IAO_0000003 xsd:string ? ; #natural_killer_cells_unit
+    obo:CMO_0000031 xsd:float ; #lymphocyte_count
+    obo:IAO_0000003 xsd:string ; #lymphocyte_count_unit
+    obo:CMO_0000030 xsd:float ; #neutrophil_count
+    obo:IAO_0000003 xsd:string ; #neutrophil_count_unit
+    obo:CMO_0000550 xsd:float ; #serum_albumin
+    obo:IAO_0000003 [ obo:UO_~ ] ; #serum_albumin_unit
+    obo:CMO_0001283 xsd:float ? ; #high_sensitivity_cardiac_troponin_1
+    obo:IAO_0000003 [ obo:UO_~ efo:EFO_0004385 ] ? ; #high_sensitivity_cardiac_troponin_1_unit
+    obo:CMO_0002821 xsd:float ? ; #osteocalcin
+    obo:IAO_0000003 [ obo:UO_~ ] ? ; #osteocalcin_unit
+    obo:CMO_0002820 xsd:float ? ; #ctx
+    obo:IAO_0000003 [ obo:UO_~ ] ? ; #ctx_unit
+    obo:CMO_0000576 xsd:float ? ; #balp
+    obo:IAO_0000003 xsd:string ? ; #balp_unit
+    efo:EFO_0008165 xsd:float ? ; #ifn8
+    obo:IAO_0000003 [ obo:UO_~ efo:EFO_0004385 ] ? ; #ifn8_unit
+    efo:EFO_0004812 xsd:float ? ; #il1beta
+    obo:IAO_0000003 [ obo:UO_~ efo:EFO_0004385 ] ? ; #il1beta_unit
+    efo:EFO_0004753 xsd:float ? ; #il12
+    obo:IAO_0000003 [ obo:UO_~ efo:EFO_0004385 ] ? ; #il12_unit
+    efo:EFO_0004811 xsd:float ? ; #il8
+    obo:IAO_0000003 [ obo:UO_~ efo:EFO_0004385 ] ? ; #il8_unit
+    efo:EFO_0008331 xsd:float ? ; #il2
+    obo:IAO_0000003 [ obo:UO_~ efo:EFO_0004385 ] ? ; #il2_unit
+    efo:EFO_0008184 xsd:float ? ; #il4
+    obo:IAO_0000003 [ obo:UO_~ efo:EFO_0004385 ] ? ; #il4_unit
+    efo:EFO_0004750 xsd:float ? ; #il10
+    obo:IAO_0000003 [ obo:UO_~ efo:EFO_0004385 ] ? ; #il10_unit
+    efo:EFO_0004749 xsd:float ? ; #mcp1_ccl2
+    obo:IAO_0000003 [ obo:UO_~ efo:EFO_0004385 ] ? ; #mcp1_ccl2_unit
+    efo:EFO_0008056 xsd:float ? ; #ip10
+    obo:IAO_0000003 [ obo:UO_~ efo:EFO_0004385 ] ? ; #ip10_unit
+    efo:EFO_0004684 xsd:float ? ; #tnfalpha
+    obo:IAO_0000003 [ obo:UO_~ efo:EFO_0004385 ] ? ; #tnfalpha_unit
+    obo:NCIT_C74887 xsd:float ? ; #ldh_isoform_1
+    obo:IAO_0000003 [ obo:UO_~ ] ? ; #ldh_isoform_1_unit
+    obo:NCIT_C74891 xsd:float ? ; #ldh_isoform_5
+    obo:IAO_0000003 [ obo:UO_~ ] ? ; #ldh_isoform_5_unit
 }

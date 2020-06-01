@@ -13,7 +13,7 @@ $graph:
         jsonldPredicate:
           _id: http://purl.obolibrary.org/obo/CMO_0000015
     temperature_unit:
-        doc: Unit of temperature e.g. http://purl.obolibrary.org/obo/UO_0000027
+        doc: Unit of temperature e.g. http://purl.obolibrary.org/obo/UO_0000027, which is Celsius (ºC)
         type: string
         jsonldPredicate:
           _id: http://purl.obolibrary.org/obo/IAO_0000003
@@ -45,7 +45,7 @@ $graph:
         jsonldPredicate:
           _id: http://purl.obolibrary.org/obo/CMO_0000004
     bp_systolic_unit:
-        doc: Unit of systolic blood pressure e.g. http://purl.obolibrary.org/obo/UO_0000272
+        doc: Unit of systolic blood pressure e.g. http://purl.obolibrary.org/obo/UO_0000272, which is mmHg
         type: string
         jsonldPredicate:
           _id: http://purl.obolibrary.org/obo/IAO_0000003
@@ -57,8 +57,583 @@ $graph:
         jsonldPredicate:
           _id: http://purl.obolibrary.org/obo/CMO_0000005
     bp_diastolic_unit:
-        doc: Unit of diastolic blood pressure e.g. http://purl.obolibrary.org/obo/UO_0000272
+        doc: Unit of diastolic blood pressure e.g. http://purl.obolibrary.org/obo/UO_0000272, which is mmHg
         type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+          _type: "@id"
+          noLinkCheck: true
+    oxygen_saturation:
+        doc: Oxygen saturation of the patient as number (e.g. 88.3)
+        type: float
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CMO_0001324
+    oxygen_saturation_unit:
+        doc: Unit of oxygen saturation e.g. http://purl.obolibrary.org/obo/UO_0000187, which is percentage (%)
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+          _type: "@id"
+          noLinkCheck: true
+    glasgow_coma_score:
+        doc: Glasgow Coma Score ( GCS/15 ) of the patient as number (e.g. 10.2)
+        type: float
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/NCIT_C121109
+    mid_upper_arm_cirumference:
+        doc: Mid-upper arm cirumference of the patient as number (e.g. 53)
+        type: float
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CMO_0000317
+    mid_upper_arm_cirumference_unit:
+        doc: Unit of mid-upper arm cirumference e.g. http://purl.obolibrary.org/obo/UO_0000016, which is mm
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+          _type: "@id"
+          noLinkCheck: true
+    height:
+        doc: Height of the patient as number (e.g. 187.5)
+        type: float
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CMO_0000106
+    height_unit:
+        doc: Unit of height e.g. http://purl.obolibrary.org/obo/UO_0000015, which is cm
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+          _type: "@id"
+          noLinkCheck: true
+    weight:
+        doc: Weight of the patient as number (e.g. 77.5)
+        type: float
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CMO_0000012
+    weight_unit:
+        doc: Unit of weight e.g. http://purl.obolibrary.org/obo/UO_0000009, which is Kg
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+          _type: "@id"
+          noLinkCheck: true
+    haemoglobin:
+        doc: Haemoglobin of the patient as number (e.g. 110.5)
+        type: float
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CMO_0000506
+    haemoglobin_unit:
+        doc: Unit of haemoglobin e.g. http://purl.obolibrary.org/obo/UO_0000175, which is g/L
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+          _type: "@id"
+          noLinkCheck: true
+    wbc_count:
+        doc: WBC count of the patient as number (e.g. 27)
+        type: float
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CMO_0000027
+    wbc_count_unit:
+        doc: Unit of WBC count e.g. x10<9>/L
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+    haematocrit:
+        doc: Haematocrit of the patient as number (e.g. 85.7)
+        type: float
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CMO_0000037  	
+    haematocrit_unit:
+        doc: Unit of haematocrit e.g. http://purl.obolibrary.org/obo/UO_0000165, which is % v/v
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+          _type: "@id"
+          noLinkCheck: true
+    platelets:
+        doc: Platelets of the patient as number (e.g. 30.0)
+        type: float
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CMO_0000921
+    platelets_unit:
+        doc: Unit of platelets e.g. x10<9>/L
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+    aptt_aptr:
+        doc: APTT/APTR of the patient as number (e.g. 37.5)
+        type: float
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CMO_0000210
+    prothrombin_time: 
+        doc: Prothrombin time (PT) of the patient as number (e.g. 50)
+        type: int
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CMO_0000211
+    prothrombin_time_unit: 
+        doc: Unit of PT e.g. http://purl.obolibrary.org/obo/UO_0000010, which is seconds
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+          _type: "@id"
+          noLinkCheck: true
+    inr:
+        doc: INR of the patient as number (e.g. 37.5)
+        type: float
+        jsonldPredicate:
+          _id: http://www.ebi.ac.uk/efo/EFO_0008390
+    alt_sgpt:
+        doc: ALT/SGPT of the patient as number (e.g. 112.4)
+        type: float
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CMO_0000574
+    alt_sgpt_unit:
+        doc: Unit of ALT/SGPT e.g. http://purl.obolibrary.org/obo/UO_0000179, which is U/L
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+          _type: "@id"
+          noLinkCheck: true
+    total_bilirubin:
+        doc: Total bilirubin of the patient as number (e.g. 10.6)
+        type: float
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CMO_0000123
+    total_bilirubin_unit:
+        doc: Unit of total bilirubin e.g. http://purl.obolibrary.org/obo/UO_0010003, which is micromol/L
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+          _type: "@id"
+          noLinkCheck: true
+    ast_sgot:
+        doc: AST/SGOT of the patient as number (e.g. 55.5)
+        type: float
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CMO_0000580
+    ast_sgot_unit:
+        doc: Unit of AST/SGOT e.g. http://purl.obolibrary.org/obo/UO_0000179, which is U/L
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+          _type: "@id"
+          noLinkCheck: true
+    urea_bun:
+        doc: Urea (BUN) of the patient as number (e.g. 1020.3)
+        type: float
+        jsonldPredicate:
+          _id:  http://purl.obolibrary.org/obo/CMO_0000049
+    urea_bun_unit:
+        doc: Unit of urea (BUN) e.g. mmol/L
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+    lactate:
+        doc: Lactate of the patient as number (e.g. 800.6)
+        type: float
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CMO_0001303
+    lactate_unit:
+        doc: Unit of lactate e.g. mmol/L
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+    creatinine:
+        doc: Creatinine of the patient as number (e.g. 3.8)
+        type: float
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CMO_0000767
+    creatinine_unit:
+        doc: Unit of creatinine e.g. http://purl.obolibrary.org/obo/UO_0010003, which is micromol/L
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+          _type: "@id"
+          noLinkCheck: true
+    sodium:
+        doc: Sodium of the patient as number (e.g. 7.7)
+        type: float
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CMO_0000499
+    sodium_unit:
+        doc: Unit of sodium e.g. mEq/L
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+    potassium:
+        doc: Potassium of the patient as number (e.g. 2.1)
+        type: float
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CMO_0000496
+    potassium_unit:
+        doc: Unit of potassium e.g. mEq/L
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+    procalcitonin:
+        doc: Procalcitonin of the patient as number (e.g. 220.9)
+        type: float
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/NCIT_C103430
+    procalcitonin_unit:
+        doc: Unit of procalcitonin e.g. http://purl.obolibrary.org/obo/UO_0000275, which is ng/mL
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+          _type: "@id"
+          noLinkCheck: true
+    crp:
+        doc: CRP of the patient as number (e.g. 330.4)
+        type: float
+        jsonldPredicate:
+          _id: http://www.ebi.ac.uk/efo/EFO_0004458
+    crp_unit:
+        doc: Unit of CRP e.g. http://purl.obolibrary.org/obo/UO_0000273, which is mg/L
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+          _type: "@id"
+          noLinkCheck: true
+    ldh:
+        doc: LDH of the patient as number (e.g. 2504.6)
+        type: float
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CMO_0000666
+    ldh_unit:
+        doc: Unit of LDH e.g. http://purl.obolibrary.org/obo/UO_0000179, which is U/L
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+          _type: "@id"
+          noLinkCheck: true
+    creatine_kinase:
+        doc: Creatine kinase of the patient as number (e.g. 20.2)
+        type: float
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CMO_0002242
+    creatine_kinase_unit:
+        doc: Unit of creatine kinase e.g. http://purl.obolibrary.org/obo/UO_0000179, which is U/L
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+          _type: "@id"
+          noLinkCheck: true
+    troponin:
+        doc: Troponin of the patient as number (e.g. 0.6)
+        type: float
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CMO_0001283
+    troponin_unit:
+        doc: Unit of troponin e.g. http://purl.obolibrary.org/obo/UO_0000275, which is ng/mL
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+          _type: "@id"
+          noLinkCheck: true
+    esr:
+        doc: ESR of the patient as number (e.g. 14)
+        type: float
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/NCIT_C74611
+    esr_unit:
+        doc: Unit of ESR e.g. mm/hr
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+    d_dimer:
+        doc: D-dimer of the patient as number (e.g. 40.1)
+        type: float
+        jsonldPredicate:
+          _id: http://www.ebi.ac.uk/efo/EFO_0004507
+    d_dimer_unit:
+        doc: Unit of D-dimer e.g. http://purl.obolibrary.org/obo/UO_0000301, which is microgram/L
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+          _type: "@id"
+          noLinkCheck: true
+    ferritin:
+        doc: Ferritin of the patient as number (e.g. 880.6)
+        type: float
+        jsonldPredicate:
+          _id: http://www.ebi.ac.uk/efo/EFO_0004459
+    ferritin_unit:
+        doc: Unit of ferritin e.g. http://purl.obolibrary.org/obo/UO_0000275, which is ng/mL
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+          _type: "@id"
+          noLinkCheck: true
+    il6:
+        doc: IL-6 of the patient as number (e.g. 15.8)
+        type: float
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CMO_0001926
+    il6_unit:
+        doc: Unit of IL-6 e.g. http://www.ebi.ac.uk/efo/EFO_0004385, which is pg/mL
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+          _type: "@id"
+          noLinkCheck: true
+    cd3_t_cells:
+        doc: CD 3 + T cells of the patient as number (e.g. 111.1)
+        type: float
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CMO_0000110
+    cd3_t_cells_unit:
+        doc: Unit of CD 3 + T cells e.g. x10<9>/L
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+    cd_4_t_cells:
+        doc: CD 4+ T cells of the patient as number (e.g. 501.7)
+        type: float?
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CMO_0000596
+    cd_4_t_cells_unit:
+        doc: Unit of CD 4 + T cells e.g. x10<9>/L
+        type: string?
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+    cd_8_t_cells:
+        doc: CD 8 + T cells of the patient as number (e.g. 637.5)
+        type: float?
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CMO_0000597
+    cd_8_t_cells_unit:
+        doc: Unit of CD 8 + T cells e.g. x10<9>/L
+        type: string?
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+    natural_killer_cells:
+        doc: Natural Killer cells of the patient as number (e.g. 379.5)
+        type: float?
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CMO_0001085
+    natural_killer_cells_unit:
+        doc: Unit of Natural Killer cells e.g. x10<9>/L
+        type: string?
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+    lymphocyte_count:
+        doc: Lymphocyte count of the patient as number (e.g. 667.5)
+        type: float
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CMO_0000031
+    lymphocyte_count_unit:
+        doc: Unit of lymphocyte count e.g. x10<9>/L
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+    neutrophil_count:
+        doc: Neutrophil count of the patient as number (e.g. 367.5)
+        type: float
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CMO_0000030
+    neutrophil_count_unit:
+        doc: Unit of neutrophil count e.g. x10<9>/L
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+    serum_albumin:
+        doc: Serum albumin of the patient as number (e.g. 3798.5)
+        type: float
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CMO_0000550
+    serum_albumin_unit:
+        doc: Unit of serum albumin e.g. http://purl.obolibrary.org/obo/UO_0000175, which is g/L
+        type: string
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+          _type: "@id"
+          noLinkCheck: true
+    high_sensitivity_cardiac_troponin_1:
+        doc: High sensitivity cardiac troponin 1 of the patient as number (e.g. 5.5)
+        type: float?
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CMO_0001283
+    high_sensitivity_cardiac_troponin_1_unit:
+        doc: Unit of high sensitivity cardiac troponin 1  e.g. http://www.ebi.ac.uk/efo/EFO_0004385, which is pg/mL
+        type: string?
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+          _type: "@id"
+          noLinkCheck: true
+    osteocalcin:
+        doc: Osteocalcin of the patient as number (e.g. 20.5)
+        type: float?
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CMO_0002821
+    osteocalcin_unit:
+        doc: Unit of osteocalcin e.g. http://purl.obolibrary.org/obo/UO_0000275, which is ng/mL	
+        type: string?
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+          _type: "@id"
+          noLinkCheck: true
+    ctx:
+        doc: CTx of the patient as number (e.g. 640.5)
+        type: float?
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CMO_0002820
+    ctx_unit:
+        doc: Unit of CTx e.g. http://purl.obolibrary.org/obo/UO_0000301, which is microgram/L
+        type: string?
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+          _type: "@id"
+          noLinkCheck: true
+    balp:
+        doc: bALP of the patient as number (e.g. 200.5)
+        type: float?
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/CMO_0000576
+    balp_unit:
+        doc: Unit of bALP e.g. IU/L
+        type: string?
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+    ifn8:
+        doc: IFN-8 of the patient as number (e.g. 900.0)
+        type: float?
+        jsonldPredicate:
+          _id: http://www.ebi.ac.uk/efo/EFO_0008165
+    ifn8_unit:
+        doc: Unit of IFN-8 e.g. http://www.ebi.ac.uk/efo/EFO_0004385, which is pg/mL
+        type: string?
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+          _type: "@id"
+          noLinkCheck: true
+    il1beta:
+        doc: IL-1-beta of the patient as number (e.g. 44.5)
+        type: float?
+        jsonldPredicate:
+          _id: http://www.ebi.ac.uk/efo/EFO_0004812
+    il1beta_unit:
+        doc: Unit of IL-1-beta e.g. http://www.ebi.ac.uk/efo/EFO_0004385, which is pg/mL
+        type: string?
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+          _type: "@id"
+          noLinkCheck: true
+    il12:
+        doc: IL-12 of the patient as number (e.g. 400.4)
+        type: float?
+        jsonldPredicate:
+          _id: http://www.ebi.ac.uk/efo/EFO_0004753
+    il12_unit:
+        doc: Unit of IL-12 e.g. http://www.ebi.ac.uk/efo/EFO_0004385, which is pg/mL
+        type: string?
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+          _type: "@id"
+          noLinkCheck: true
+    il8:
+        doc: IL-8 of the patient as number (e.g. 11.3)
+        type: float?
+        jsonldPredicate:
+          _id: http://www.ebi.ac.uk/efo/EFO_0004811
+    il8_unit:
+        doc: Unit of IL-8 e.g. http://www.ebi.ac.uk/efo/EFO_0004385, which is pg/mL
+        type: string?
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+          _type: "@id"
+          noLinkCheck: true
+    il2:
+        doc: IL-2 of the patient as number (e.g. 77.8)
+        type: float?
+        jsonldPredicate:
+          _id: http://www.ebi.ac.uk/efo/EFO_0008331
+    il2_unit:
+        doc: Unit of IL-2 e.g. http://www.ebi.ac.uk/efo/EFO_0004385, which is pg/mL
+        type: string?
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+          _type: "@id"
+          noLinkCheck: true
+    il4:
+        doc: IL-4 of the patient as number (e.g. 66.6)
+        type: float?
+        jsonldPredicate:
+          _id: http://www.ebi.ac.uk/efo/EFO_0008184
+    il4_unit:
+        doc: Unit of IL-4 e.g. http://www.ebi.ac.uk/efo/EFO_0004385, which is pg/mL
+        type: string?
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+          _type: "@id"
+          noLinkCheck: true
+    il10:
+        doc: IL-10 of the patient as number (e.g. 0.2)
+        type: float?
+        jsonldPredicate:
+          _id: http://www.ebi.ac.uk/efo/EFO_0004750
+    il10_unit:
+        doc: Unit of IL-10 e.g. http://www.ebi.ac.uk/efo/EFO_0004385, which is pg/mL
+        type: string?
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+          _type: "@id"
+          noLinkCheck: true
+    mcp1_ccl2:
+        doc: MCP-1 (CCL2) of the patient as number (e.g. 333.6)
+        type: float?
+        jsonldPredicate:
+          _id: http://www.ebi.ac.uk/efo/EFO_0004749
+    mcp1_ccl2_unit:
+        doc: Unit of MCP-1 (CCL2) e.g. http://www.ebi.ac.uk/efo/EFO_0004385, which is pg/mL
+        type: string?
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+          _type: "@id"
+          noLinkCheck: true
+    ip10:
+        doc: IP-10 of the patient as number (e.g. 70.4)
+        type: float?
+        jsonldPredicate:
+          _id: http://www.ebi.ac.uk/efo/EFO_0008056
+    ip10_unit:
+        doc: Unit of IP-10 e.g. http://www.ebi.ac.uk/efo/EFO_0004385, which is pg/mL
+        type: string?
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+          _type: "@id"
+          noLinkCheck: true
+    tnfalpha:
+        doc: TNF-alpha of the patient as number (e.g. 366.4)
+        type: float?
+        jsonldPredicate:
+          _id: http://www.ebi.ac.uk/efo/EFO_0004684
+    tnfalpha_unit:
+        doc: Unit of TNF-alpha e.g. http://www.ebi.ac.uk/efo/EFO_0004385, which is pg/mL
+        type: string?
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+          _type: "@id"
+          noLinkCheck: true
+    ldh_isoform_1:
+        doc: LDH isoform 1 of the patient as number (e.g. 95.6)
+        type: float?
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/NCIT_C74887
+    ldh_isoform_1_unit:
+        doc: Unit of LDH isoform 1 e.g. http://purl.obolibrary.org/obo/UO_0000179, which is U/L
+        type: string?
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/IAO_0000003
+          _type: "@id"
+          noLinkCheck: true
+    ldh_isoform_5:
+        doc: LDH isoform 5 of the patient as number (e.g. 369.4)
+        type: float?
+        jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/NCIT_C74891
+    ldh_isoform_5_unit:
+        doc: Unit of LDH isoform 5 e.g. http://purl.obolibrary.org/obo/UO_0000179, which is U/L
+        type: string?
         jsonldPredicate:
           _id: http://purl.obolibrary.org/obo/IAO_0000003
           _type: "@id"
