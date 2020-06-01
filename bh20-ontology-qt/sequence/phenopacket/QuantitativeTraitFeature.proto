@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package org.phenopackets.schema.v1.core;
+
+import "google/protobuf/timestamp.proto";
+
+option java_multiple_files = true;
+option java_package = "org.phenopackets.schema.v1.core";
+
+message QuantitativeTraitFeature {
+    string description = 1;
+    OntologyClass type = 2;
+    bool negated = 3;
+    string value = 4;
+    OntologyClass unit = 5;
+    OntologyClass assay = 6;
+    oneof onset {
+        Age age_of_onset = 7;
+        AgeRange age_range_of_onset = 8;
+    }
+    Biosample biosample = 9;
+    repeated Evidence evidence = 10;
+}
