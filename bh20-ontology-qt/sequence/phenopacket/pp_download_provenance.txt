@@ -1,0 +1,5 @@
+## Download of the PhenoPacket protobuf schema 
+2 June 2020
+wget https://raw.githubusercontent.com/phenopackets/phenopacket-schema/master/src/main/proto/base.proto
+
+https://github.com/phenopackets/phenopacket-schema/tree/master/src/main/proto
